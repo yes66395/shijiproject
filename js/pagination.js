@@ -127,9 +127,9 @@
             pageContainer.innerHTML = restore(Data);
         }
     }
-    //重新渲染回到第一筆資料與第18
+    //重新渲染回到第一筆資料與第25
     function restore(data) {
-        let resultData = data.slice(0, 18);
+        let resultData = data.slice(0, 25);
         let str = '';
         resultData.forEach((item, index) => {
             str += `<div class="author-container" id="author-container">
