@@ -1,0 +1,293 @@
+    :root {
+        --relative: relative;
+        --absolute: absolute;
+        --fixed: fixed;
+        --wd: 100%;
+        --height: 100%;
+        --box: border-box;
+        --flex: flex;
+        --bgc-one: #2980b9;
+        --bgc-two: #c0392b;
+        --bgc-three: #fe70d8;
+        --bgc-four: #3713c1;
+        --bgc-five: #D0D0D0;
+        --none: none;
+        --center: center;
+    }
+
+    html,
+    body {
+        height: var(--height);
+    }
+
+    body {
+        background-color: var(--bgc-five);
+    }
+
+    /*載入動畫*/
+    .loader-background {
+        position: var(--relative);
+        z-index: 10;
+        width: var(--wd);
+    }
+
+    .load-box {
+        position: var(--fixed);
+        top: 0;
+        left: 0;
+        height: var(--height);
+        display: var(--flex);
+        justify-content: var(--center);
+        align-items: var(--center);
+        width: var(--wd);
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 10;
+    }
+
+    .loader {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 6px solid #fff;
+        border-bottom: 6px solid #0000ff;
+        animation: LoadAnimation 1.5s linear infinite;
+        z-index: 10;
+    }
+
+    @keyframes LoadAnimation {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+    .load {
+        display: var(--none);
+        z-index: 1;
+    }
+
+    /*tang-nav 樣式*/
+    .tang-nav {
+        position: var(--relative);
+        height: 60px;
+        box-sizing: var(--box);
+        background: linear-gradient(60deg, var(--bgc-three), var(--bgc-four));
+
+    }
+
+    .nav-control {
+        position: var(--absolute);
+        display: block;
+        right: 0;
+        padding: 25px 5px;
+        color: #fff;
+        display: var(--none);
+    }
+
+    .tang-nav .desc-nav {
+        display: var(--flex);
+        justify-content: space-around;
+        align-items: var(--center);
+        color: #fff;
+    }
+
+    .tang-nav .desc-nav .nav-item {
+        padding: 25px 0;
+        cursor: pointer;
+    }
+
+    .click {
+        color: #000;
+    }
+
+    /*唐朝詩歌興盛樣式*/
+    .themes-describe-container {
+        position: var(--relative);
+        z-index: -1;
+        width: var(--wd);
+        max-width: var(--wd);
+        box-sizing: var(--box);
+    }
+
+    .nav-list {
+        padding: 30px 0;
+    }
+
+    .nav-list .nav-item-describe {
+        padding: 40px 10px;
+        margin: 0 auto 10px auto;
+        width: 50%;
+        box-sizing: var(--box);
+        border-radius: 20px;
+        transition: 0.5s;
+        background-color: var(--bgc-one);
+        border: 5px groove var(--bgc-four);
+        display: var(--none);
+
+    }
+
+    .show[data-show] {
+        display: block;
+    }
+
+    @keyframes fadeInAnimation {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .nav-list .nav-item-describe:nth-child(even) {
+        border: 10px double var(--bgc-two);
+        background-color: var(--bgc-two);
+    }
+
+    .active {
+        animation: fadeInAnimation 1.5s;
+    }
+
+    .writer-name-image {
+        width: var(--wd);
+        height: 350px;
+        background: url('/shiji_project/image/tang.png') no-repeat center, linear-gradient(90deg, #AEDD81, #c4e3eb, #D0D0D0);
+    }
+
+    .describle-author-container {
+        position: var(--relative);
+        display: var(--flex);
+        flex-wrap: wrap;
+    }
+
+    .author {
+        position: var(--absolute);
+        top: -25px;
+        left: 45%;
+    }
+
+    .describle-author-container .author-img-box {
+        width: 30%;
+        padding-bottom: 10px;
+    }
+
+    .describle-author {
+        width: calc(var(--wd) - 30%);
+        box-sizing: var(--box);
+        padding-bottom: 10px;
+    }
+
+    .author-life-table {
+        width: var(--wd);
+        height: var(--height);
+        background-color: #dbf6ea;
+        text-align: var(--center);
+    }
+
+    .author-life-table th {
+        padding: 7px 10px;
+        color: #202122;
+        font-weight: bolder;
+    }
+
+    .author-life-table tr {
+        border: 1px solid rgb(234, 236, 240);
+    }
+
+    .author-life-table .author-name {
+        color: #000;
+        font-size: 120%;
+        background-color: #ffffdd;
+        padding: 7px 10px;
+        text-align: var(--center);
+        font-weight: bolder;
+    }
+
+    .author-life-table .officials {
+        display: block;
+        padding: 7px 10px;
+        text-align: var(--center);
+        font-weight: bold;
+        font-size: 110%;
+        background-color: #cddbeb;
+    }
+
+    /*paragraph 段落p文字內容*/
+    .nav-item-describe .paragraph {
+        letter-spacing: 2px;
+        line-height: 1.7;
+        font-size: 110%;
+        color: #fff;
+    }
+
+    .title {
+        padding-bottom: 8px;
+        font-size: 120%;
+        font-weight: bolder;
+        text-align: var(--center);
+        color: #fff;
+    }
+
+    .subject-matter-range,
+    .expose-society-describe {
+        margin: 50px;
+    }
+
+    .next-box {
+        height: 50px;
+        text-align: var(--center);
+
+    }
+
+    .next-box .next-one {
+        display: block;
+        cursor: pointer;
+        background: linear-gradient(60deg, #3a1c71, #d76d77, #ffaf7b);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        font-size: 36px;
+        font-weight: bolder;
+    }
+
+    @media(min-width:360px) and (max-width:768px) {
+        .writer-name-image {
+            max-width: var(--wd);
+            height: 150px;
+            background: url('/shiji_project/image/tang.png') no-repeat center, linear-gradient(90deg, #AEDD81, #c4e3eb, #D0D0D0);
+            background-size: contain;
+        }
+
+        .nav-control {
+            display: block;
+            position: relative;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 1.5em;
+            cursor: pointer;
+        }
+
+        .tang-nav .desc-nav {
+            flex-direction: column;
+            justify-content: center;
+            transition: 0.3s ease-in-out;
+            display: var(--none);
+
+        }
+
+        .desc-nav .nav-item {
+            width: 100%;
+            background-color: purple;
+            text-align: center;
+        }
+
+        .desc-nav.block {
+            display: block;
+        }
+
+
+    }
