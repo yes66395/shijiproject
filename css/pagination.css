@@ -118,4 +118,7 @@ body {
     .main-container {
         flex-wrap: wrap;
     }
+    .pagination-container .pagination-list {
+        flex-wrap: wrap;
+    }
 }
