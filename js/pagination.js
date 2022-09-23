@@ -28,7 +28,7 @@
 
     function pagination(getdata, nowPage) {
         const dataTotal = getdata.length;
-        let initPage = 18;
+        let initPage = 25;
         let pageTotal = Math.ceil(dataTotal / initPage);
         let currentPage = nowPage;
         if (currentPage > pageTotal) {
