@@ -1,0 +1,121 @@
+html,
+body {
+    height: 100%;
+}
+
+.main-container {
+    position: relative;
+    padding: 3px;
+}
+
+.new-main {
+    width: inherit;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 8px 8px;
+    box-sizing: border-box;
+
+}
+
+.new-main .author-container {
+    width: 400px;
+    padding: 8px 8px;
+    margin: 3px 3px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    transition: 0.3s ease-in-out;
+}
+
+.author-container .author-name {
+    text-align: center;
+    margin-bottom: 8px;
+    font-weight: 800;
+    font-size: 1.2rem;
+    color: #1d4ed8;
+}
+
+.author-container .poetry-name {
+    display: block;
+    text-align: center;
+    padding: 8px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.author-container .article {
+    line-height: 1.5;
+    background-color: #fff;
+    border-radius: 5px;
+    font-size: larger;
+}
+
+.main-container .pagination-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+
+}
+
+.pagination-container .pagination-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pagination-list .page-item {
+    margin: 2px;
+    padding: 8px;
+    background-color: #1d4ed8;
+    color: #fff;
+    border: 2px solid #888;
+    font-size: large;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.pagination-container .page-item-prev,
+.pagination-container .page-item-next {
+    margin: 3px 5px 3px 10px;
+    outline: none;
+    padding: 8px 8px;
+    background-color: #1d4ed8;
+    text-align: center;
+    color: #fff;
+    box-shadow: 3px 3px 3px #1d4ed8;
+    border-radius: 5px;
+    font-weight: bolder;
+    font-size: large;
+    border: none;
+    cursor: pointer;
+
+}
+
+.pagination-list .page-number {
+    outline: none;
+    width: 50px;
+    border: #1d4ed8 solid;
+    background-color: #1d4ed8;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+
+
+.pagination-list .page-item.active {
+    color: #1d4ed8;
+    background-color: #fff;
+}
+
+
+
+@media(min-width:390px) and (max-width:768px) {
+    .main-container {
+        flex-wrap: wrap;
+    }
+}
