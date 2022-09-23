@@ -155,7 +155,7 @@
     .writer-name-image {
         width: var(--wd);
         height: 350px;
-        background: url('https://raw.githubusercontent.com/yes66395/shijiproject/main/image/tang.png') no-repeat center, linear-gradient(90deg, #AEDD81, #c4e3eb, #D0D0D0);
+        background: url('https://github.com/yes66395/shijiproject/blob/main/image/tang.png?raw=true') no-repeat center, linear-gradient(90deg, #AEDD81, #c4e3eb, #D0D0D0);
     }
 
     .describle-author-container {
@@ -258,7 +258,7 @@
         .writer-name-image {
             max-width: var(--wd);
             height: 150px;
-            background: url('/shiji_project/image/tang.png') no-repeat center, linear-gradient(90deg, #AEDD81, #c4e3eb, #D0D0D0);
+            background: url('https://github.com/yes66395/shijiproject/blob/main/image/tang.png?raw=true') no-repeat center, linear-gradient(90deg, #AEDD81, #c4e3eb, #D0D0D0);
             background-size: contain;
         }
 
