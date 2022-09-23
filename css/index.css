@@ -155,7 +155,7 @@
     .writer-name-image {
         width: var(--wd);
         height: 350px;
-        background: url('/image/tang.png') no-repeat center, linear-gradient(90deg, #AEDD81, #c4e3eb, #D0D0D0);
+        background: url('./image/tang.png') no-repeat center, linear-gradient(90deg, #AEDD81, #c4e3eb, #D0D0D0);
     }
 
     .describle-author-container {
