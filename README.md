@@ -10,3 +10,5 @@ https://yes66395.github.io/shijiproject/  <br/>
             5: "僧皎然"
             6: "唐玄宗"
             7:"杜秋娘"
+  <br/>
+  唐詩api取自 <a href='https://github.com/chinese-poetry/chinese-poetry'>這</a>
