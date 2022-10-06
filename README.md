@@ -1,5 +1,5 @@
 # shijiproject
-唐詩三百首的小Project 純CSS + JavaScript <br/>
+唐詩三百首的小Project 純CSS + JavaScript ，利用原生fetch去串接<br/>
 <br/> 為了好展示，先暫時把長恨歌過濾掉了。 
 https://yes66395.github.io/shijiproject/  <br/>
 缺少的唐朝詩人  <br/>
