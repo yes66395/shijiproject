@@ -28,7 +28,7 @@
 
     function pagination(getdata, nowPage) {
         const dataTotal = getdata.length;
-        let initPage = 18;
+        let initPage = 25;
         let pageTotal = Math.ceil(dataTotal / initPage);
         let currentPage = nowPage;
         if (currentPage > pageTotal) {
@@ -129,7 +129,7 @@
     }
     //重新渲染回到第一筆資料與第18
     function restore(data) {
-        let resultData = data.slice(0, 18);
+        let resultData = data.slice(0, 25);
         let str = '';
         resultData.forEach((item, index) => {
             str += `<div class="author-container" id="author-container">
