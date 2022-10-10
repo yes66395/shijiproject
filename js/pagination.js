@@ -103,6 +103,7 @@
         if (e.target.nodeName.toLowerCase() !== 'a') return;
         const page = tar.dataset.page;
         pagination(Data, page);
+        return window.scrollTo(0,0);
     }
     function searchData(data, keyword) {
         const searchFinallyData = data.reduce((prev, item) => {
@@ -127,7 +128,7 @@
             pageContainer.innerHTML = restore(Data);
         }
     }
-    //重新渲染回到第一筆資料與第18
+    //重新渲染回到第一筆資料與第25
     function restore(data) {
         let resultData = data.slice(0, 25);
         let str = '';
